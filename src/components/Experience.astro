@@ -1,0 +1,65 @@
+---
+const experiences = [
+  {
+    title: 'Internship',
+    company: 'PT. Petrolab Services',
+    duration: 'January 2026 - Present',
+    responsibilities: [
+      'Contributing to the development of mobile app using Flutter for internal use',
+    ],
+  },
+  {
+    title: 'Cloud Computing Cohort 2024 Batch 1',
+    company: 'Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka',
+    duration: 'February - June 2024',
+    responsibilities: [
+      'Completed all mandatory courses',
+      'Participated in final project with cross-disciplinary team',
+    ],
+  },
+];
+---
+
+<section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 bg-dark-surface">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4 text-center">
+      Recent <span class="text-accent">Experience</span>
+    </h2>
+    <div class="w-20 h-1 bg-accent mx-auto mb-12"></div>
+
+    <div class="space-y-12">
+      {
+        experiences.map((exp) => (
+          <div class="bg-dark-bg p-6 sm:p-8 rounded-lg border border-dark-border hover:border-accent transition-all duration-300 transform hover:scale-[1.01]">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold text-white mb-1">{exp.title}</h3>
+                <p class="text-accent-light text-lg">{exp.company}</p>
+              </div>
+              <span class="text-accent font-semibold mt-2 sm:mt-0">{exp.duration}</span>
+            </div>
+
+            <ul class="space-y-3 mt-6">
+              {exp.responsibilities.map((resp) => (
+                <li class="flex items-start text-dark-text-muted">
+                  <svg
+                    class="w-5 h-5 text-accent mr-3 mt-1 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>{resp}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
