@@ -1,46 +1,86 @@
-# Astro Starter Kit: Basics
+# Personal Portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+Personal website built with Astro and Tailwind CSS. This project showcases profile information, education, experience, projects, and contact details in a single-page portfolio.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Tech Stack
 
-## 🚀 Project Structure
+- Astro 5
+- Tailwind CSS 4
+- Vite
 
-Inside of your Astro project, you'll see the following folders and files:
+## Sections
+
+The homepage is composed from reusable Astro components:
+
+- Header
+- Hero
+- About
+- Education
+- Experience
+- Projects
+- Contact
+- Footer
+
+## Project Structure
 
 ```text
 /
 ├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+├── src/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   └── styles/
+├── astro.config.mjs
+├── tailwind.config.mjs
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Getting Started
 
-## 🧞 Commands
+### Prerequisites
 
-All commands are run from the root of the project, from a terminal:
+- Node.js 18+ (Node.js 20 LTS recommended)
+- npm
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Install
 
-## 👀 Want to learn more?
+```bash
+npm install
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Run Locally
+
+```bash
+npm run dev
+```
+
+Local development server runs at:
+
+- http://localhost:4321
+
+## Available Scripts
+
+- `npm run dev` - Start the development server
+- `npm run build` - Build the site for production into `dist/`
+- `npm run preview` - Preview the production build locally
+- `npm run astro` - Run Astro CLI commands
+
+## Deployment Notes
+
+This project is configured for GitHub Pages:
+
+- `site`: `https://danisharfa.github.io`
+- `base`: `/personal-portfolio`
+
+These values are defined in `astro.config.mjs`. If you deploy somewhere else, update them accordingly.
+
+## Customize Content
+
+- Edit page composition in `src/pages/index.astro`
+- Update section UI/content in `src/components/`
+- Update global styling in `src/styles/global.css`
+
+## License
+
+This project is for personal portfolio use.
