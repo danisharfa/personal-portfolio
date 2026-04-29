@@ -25,7 +25,6 @@ The homepage is composed from reusable Astro components:
 
 ```text
 /
-├── public/
 ├── src/
 │   ├── components/
 │   ├── layouts/
