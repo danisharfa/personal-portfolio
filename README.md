@@ -69,8 +69,9 @@ Local development server runs at:
 
 This project is configured for GitHub Pages:
 
-- `site`: `https://danisharfa.github.io`
-- `base`: `/personal-portfolio`
+- ~~`site`: `https://danisharfa.github.io`~~
+- ~~`base`: `/personal-portfolio`~~
+- `site`: `https://darfadev.xyz`
 
 These values are defined in `astro.config.mjs`. If you deploy somewhere else, update them accordingly.
 

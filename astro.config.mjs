@@ -7,6 +7,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: 'https://danisharfa.github.io',
-  base: '/personal-portfolio',
+  // site: 'https://danisharfa.github.io',
+  site: 'https://darfadev.xyz',
+  // base: '/personal-portfolio',
 });
