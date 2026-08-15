@@ -16,6 +16,11 @@ export default {
           hover: '#fb923c',
           light: '#fdba74',
         },
+        secondary: {
+          DEFAULT: '#22d3ee',
+          hover: '#67e8f9',
+          light: '#a5f3fc',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

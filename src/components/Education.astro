@@ -12,20 +12,20 @@ const education = [
 <section id="education" class="py-20 px-4 sm:px-6 lg:px-8">
   <div class="container mx-auto max-w-6xl">
     <h2 class="text-4xl sm:text-5xl font-bold text-white mb-4 text-center">
-      <span class="text-accent">Education</span>
+      <span class="text-secondary">Education</span>
     </h2>
-    <div class="w-20 h-1 bg-accent mx-auto mb-12"></div>
+    <div class="w-20 h-1 bg-secondary mx-auto mb-12"></div>
 
     <div class="space-y-8 max-w-4xl mx-auto">
       {
         education.map((item, index) => (
-          <div class="relative pl-8 pb-8 border-l-2 border-dark-border hover:border-accent transition-colors duration-300 group">
-            <div class="absolute -left-2.25 top-0 w-4 h-4 bg-accent rounded-full group-hover:scale-125 transition-transform duration-300" />
+          <div class="relative pl-8 pb-8 border-l-2 border-dark-border hover:border-secondary transition-colors duration-300 group">
+            <div class="absolute -left-2.25 top-0 w-4 h-4 bg-secondary rounded-full group-hover:scale-125 transition-transform duration-300" />
 
-            <div class="bg-dark-surface p-6 rounded-lg border border-dark-border hover:border-accent transition-all duration-300 transform hover:scale-[1.02]">
-              <span class="text-accent text-sm font-semibold">{item.year}</span>
+            <div class="bg-dark-surface p-6 rounded-lg border border-dark-border hover:border-secondary transition-all duration-300 transform hover:scale-[1.02]">
+              <span class="text-secondary text-sm font-semibold">{item.year}</span>
               <h3 class="text-2xl font-bold text-white mt-2 mb-1">{item.degree}</h3>
-              <p class="text-accent-light mb-3">{item.institution}</p>
+              <p class="text-secondary-light mb-3">{item.institution}</p>
               <p class="text-dark-text-muted">{item.description}</p>
             </div>
           </div>

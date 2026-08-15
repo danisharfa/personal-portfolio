@@ -10,6 +10,10 @@
   --color-accent-hover: #fb923c;
   --color-accent-light: #fdba74;
 
+  --color-secondary: #22d3ee;
+  --color-secondary-hover: #67e8f9;
+  --color-secondary-light: #a5f3fc;
+
   --font-family-sans: Inter, system-ui, sans-serif;
 }
 

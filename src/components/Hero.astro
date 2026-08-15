@@ -2,31 +2,67 @@
 
 ---
 
-<section class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
-  <div class="container mx-auto text-center">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
-        Hi, I'm <span class="text-accent">Muhammad Danish Arfa</span>
-      </h1>
-      <p class="text-xl sm:text-2xl text-dark-text-muted mb-8 animate-fade-in-delay">
-        Full-Stack Developer
-      </p>
-      <p class="text-lg text-dark-text-muted mb-12 max-w-2xl mx-auto animate-fade-in-delay-2">
-        Learning continuously, exploring technology and the world.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-3">
-        <a
-          href="#projects"
-          class="px-8 py-3 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-all duration-200 transform hover:scale-105"
+<section
+  class="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 overflow-hidden"
+>
+  <!-- Decorative glow blobs -->
+  <div
+    class="absolute top-1/4 -left-24 w-72 h-72 sm:w-96 sm:h-96 bg-accent/20 rounded-full blur-3xl pointer-events-none"
+  >
+  </div>
+  <div
+    class="absolute bottom-1/4 -right-24 w-72 h-72 sm:w-96 sm:h-96 bg-secondary/20 rounded-full blur-3xl pointer-events-none"
+  >
+  </div>
+
+  <div class="container mx-auto relative">
+    <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+      <div class="order-2 md:order-1 text-center md:text-left">
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
+          Hi, I'm <span class="text-accent">Muhammad Danish Arfa</span>
+        </h1>
+        <p class="text-xl sm:text-2xl text-dark-text-muted mb-8 animate-fade-in-delay">
+          Full-Stack Developer
+        </p>
+        <p
+          class="text-lg text-dark-text-muted mb-12 max-w-2xl mx-auto md:mx-0 animate-fade-in-delay-2"
         >
-          View My Work
-        </a>
-        <a
-          href="#contact"
-          class="px-8 py-3 border-2 border-accent text-accent hover:bg-accent hover:text-white font-semibold rounded-lg transition-all duration-200 transform hover:scale-105"
+          Learning continuously, exploring technology and the world.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in-delay-3"
         >
-          Get In Touch
-        </a>
+          <a
+            href="#projects"
+            class="px-8 py-3 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-all duration-200 transform hover:scale-105"
+          >
+            View My Work
+          </a>
+          <a
+            href="#contact"
+            class="px-8 py-3 border-2 border-accent text-accent hover:bg-accent hover:text-white font-semibold rounded-lg transition-all duration-200 transform hover:scale-105"
+          >
+            Get In Touch
+          </a>
+        </div>
+      </div>
+
+      <div class="order-1 md:order-2 flex justify-center md:justify-end animate-fade-in">
+        <div class="relative">
+          <div
+            class="absolute inset-0 rounded-full bg-linear-to-br from-accent to-secondary blur-2xl opacity-30"
+          >
+          </div>
+          <div
+            class="relative w-56 h-56 sm:w-72 sm:h-72 rounded-full p-1.5 bg-linear-to-br from-accent to-secondary"
+          >
+            <img
+              src="/images/profile.JPG"
+              alt="Muhammad Danish Arfa"
+              class="w-full h-full rounded-full object-cover bg-dark-surface"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
