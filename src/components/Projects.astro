@@ -1,24 +1,22 @@
 ---
 const projects = [
   {
-    title: 'SIM Quran - Full-Stack',
-    description: "Web-based information system for monitoring students' memorization progress.",
+    title: "SIM Qur'an - Full-Stack Developer",
+    description:
+      'Undergraduate thesis (2025): a web-based system for SDIT Ulul Albab Mataram that digitizes Quran memorization (tahfidz) and recitation (tahsin) monitoring, with role-based features for admins, coordinators, teachers, and parents. Validated with Black Box Testing (all functions passing) and a SUS score of 73.08 (Grade B-, Acceptable) from 30 respondents.',
     techStack: [
       'Next.js (App Router)',
-      'shadcn/ui',
-      'Tailwind CSS',
-      'Neon (PostgreSQL)',
+      'Server Actions',
       'Prisma ORM',
+      'PostgreSQL',
       'Vercel',
     ],
     github: 'https://github.com/danisharfa/sim-siswa-sdit',
-    // demo: 'https://demo.example.com',
-    // image: 'gambar',
   },
   {
-    title: 'Florify - Backend & DevOps',
+    title: 'Florify - Backend & Cloud Developer',
     description:
-      'An AI-powered mobile application that provides personalized plant care recommendations through cloud integration and machine learning.',
+      'Bangkit Academy capstone project (2024): backend architecture for an AI-powered mobile app providing personalized plant care advice, with RESTful APIs and a Flask API integrating machine learning models.',
     techStack: [
       'Express.js',
       'Flask',
@@ -49,7 +47,7 @@ const projects = [
               <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-accent transition-colors">
                 {project.title}
               </h3>
-              <p class="text-dark-text-muted mb-4 line-clamp-3">{project.description}</p>
+              <p class="text-dark-text-muted mb-4">{project.description}</p>
 
               <div class="flex flex-wrap gap-2 mb-6">
                 {project.techStack.map((tech) => (
